@@ -9,13 +9,5 @@ ENV UPDATER_THREADS=10     \
 
 RUN pip install --no-cache-dir nextcloud_news_updater
 
-CMD [ "nextcloud-news-updater",             \
-        "--threads", "${UPDATER_THREADS}",   \
-        "--timeout", "${UPDATER_TIMEOUT}",   \
-        "--interval", "${UPDATER_INTERVAL}", \
-        "--apilevel", "${UPDATER_APILEVEL}", \
-        "--loglevel", "${UPDATER_LOGLEVEL}", \
-        "--user", "${UPDATER_USER}",         \
-        "--password", "${UPDATER_PASSWORD}", \
-        "--mode", "endless"                  \
-    ]
+COPY entrypoint.sh /bin/entrypoint.sh
+CMD [ "/bin/entrypoint.sh" ]
