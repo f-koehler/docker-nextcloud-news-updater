@@ -7,7 +7,9 @@ ENV UPDATER_THREADS=10     \
     UPDATER_LOGLEVEL=error \
     UPDATER_URL="http://nextcloud"
 
-RUN pip install --no-cache-dir nextcloud_news_updater
+COPY requirements.txt ./
+
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY entrypoint.sh /bin/entrypoint.sh
 CMD [ "/bin/entrypoint.sh" ]
