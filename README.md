@@ -1,5 +1,6 @@
 # docker-nextcloud-news-updater
 
+[![Updates](https://pyup.io/repos/github/f-koehler/docker-nextcloud-news-updater/shield.svg)](https://pyup.io/repos/github/f-koehler/docker-nextcloud-news-updater/)
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/fabiankoehler/nextcloud-news-updater?sort=date&style=flat)
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/fabiankoehler/nextcloud-news-updater)
 ![MicroBadger Layers](https://img.shields.io/microbadger/layers/fabiankoehler/nextcloud-news-updater)
