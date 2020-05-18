@@ -1,4 +1,4 @@
-FROM python:buster
+FROM python:alpine
 
 ENV UPDATER_THREADS=10     \
     UPDATER_TIMEOUT=300    \
