@@ -1,5 +1,9 @@
 # docker-nextcloud-news-updater
 
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/fabiankoehler/nextcloud-news-updater?sort=date&style=flat)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/fabiankoehler/nextcloud-news-updater)
+![MicroBadger Layers](https://img.shields.io/microbadger/layers/fabiankoehler/nextcloud-news-updater)
+
 Run the [`nextcloud-news-updater`](https://github.com/nextcloud/news-updater) inside a docker container and use the Nextcloud News REST API.
 
 The container is configured using the default environment variables:
